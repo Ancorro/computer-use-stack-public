@@ -1,0 +1,5 @@
+{
+  "about": "OSWorld 2.0 (release osworld-v2.1) sample of 10. Drawn 2026-10-22 with random.Random(20261022).sample from the 60 tasks that need no mocked website, GitLab or web URL (48 do). Same 10 for every arm.",
+  "tasks": ["004", "023", "029", "030", "034", "044", "067", "085", "097", "103"],
+  "max_steps": 100
+}

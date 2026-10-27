@@ -1,0 +1,22 @@
+[project]
+name = "computer-use-stack"
+version = "0.1.0"
+description = "Computer use with a plan: a planner splits the goal into checked steps, a fast decision model carries them out, code checks the screen."
+requires-python = ">=3.12"
+dependencies = [
+    # Screen reading, actions, the decision model's client and the writer: the fork, pinned.
+    "typesafe-computer-use[rapidocr] @ git+https://github.com/Ancorro/typesafe-computer-use@c48c58e92f0ec9b42a27700419a844ae11d14f30",
+]
+
+[dependency-groups]
+dev = ["pytest==9.1.1"]
+
+[build-system]
+requires = ["hatchling==1.32.1"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["cu_stack"]
